@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion &amp; Registrarse</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!--Incluimos JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!--Contenedor principal-->
+    <div class="panel1"> 
+        <!--Panel de info del login-->
+        <div class="login-info-box">
+            <h2>Ya tienes una cuenta?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <label id="label-register" for="log-reg-show">Iniciar Sesion</label>
+            <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+        </div>
+        <!--Panel de info del registro-->
+        <div class="register-info-box">
+            <h2>No tienes una cuenta?</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <label id="label-login" for="log-login-show">Registrarse</label>
+            <input type="radio" name="active-log-panel" id="log-login-show">
+        </div>
+        <div class="white-panel">
+            <!--Panel en blanco donde van Formulario de Inicio de sesion y formulario de registro-->
+            <div class="login-show show-log-panel">
+                <h2>Iniciar Sesion</h2>
+                <input type="text" placeholder="Usuario">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="button" value="Iniciar Sesion">
+                <a href="">Has olvidado la contraseña?</a>
+            </div>
+            <div class="register-show">
+                <h2>Registrarse</h2>
+                <input type="Text" placeholder="Usuario">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="password" placeholder="Confirma tu contraseña">
+                <input type="button" value="Registrarse">
+            </div>
+        </div>
+    </div>
+</body>
+<!--Enlace a JavaScript-->
+<script  src="caja.js"></script>
+</html>
